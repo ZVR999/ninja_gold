@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 25px;
+}
+
+h3, .counter{
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.counter, .building, .activity{
+    border: 2px solid black;
+}
+
+.building{
+    display: inline-block;
+    width: 19%;
+    vertical-align: top;
+    padding: 15px;
+}
+
+p, .activity{
+    margin-top: 10px;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 2px;
+}
+
+.activity{
+    height: 200px;
+    overflow-y: scroll;
+}
