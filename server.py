@@ -12,7 +12,16 @@ def index():
 
 @app.route('/process_money', methods=['POST'])
 def process_money():
+    building = request.form['building']
     print request.form['building'] 
+    if building == 'farm':
+        session['counter'] += random.randint(10,20)
+    
 
+    return redirect('/')
+
+@app.route('/reset', methods=['POST'])
+def reset():
+    session['counter'] = 0
     return redirect('/')
 app.run(debug=True)
