@@ -5,6 +5,7 @@ app.secret_key = 'n1312rn23!@123!%^VDSDSdgge5#$hfdss#$646u4'
 
 @app.route('/')
 def index():
+    # Adds counter to top most box
     if 'counter' not in session:
         session['counter'] = 0
     return render_template('index.html')

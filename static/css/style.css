@@ -7,16 +7,20 @@ body{
     padding: 25px;
 }
 
+/* Start of header */
 h3, .counter{
     display: inline-block;
     width: 20%;
     margin-bottom: 10px;
     padding: 2px;
 }
+/* End of header */
 
+/* Start all borders seen */
 .counter, .building, .activity{
     border: 2px solid black;
 }
+/* End all borders seen */
 
 .building{
     display: inline-block;
@@ -28,15 +32,19 @@ h3, .counter{
 p, .activity{
     margin-top: 10px;
 }
-
+/* Start styling for buttons seen */
 input{
     display: block;
     margin: 0 auto;
     margin-top: 25px;
     padding: 2px;
 }
+/* End styling for buttons seen */
 
+/* Start styling for activites current data box*/
 .activity{
     height: 200px;
+    width: 85%;
     overflow-y: scroll;
 }
+/* End styling for activites current data box */
