@@ -13,16 +13,21 @@ def index():
 @app.route('/process_money', methods=['POST'])
 def process_money():
     building = request.form['building']
-    print request.form['building'] 
+    print request.form['building']
+    addAmount = 0 
     if building == 'farm':
-        session['counter'] += random.randint(10,20)
+        addAmount = random.randint(10,20)
+        session['counter'] += addAmount
     elif building == 'cave':
-        session['counter'] += random.randint(5,10)
+        addAmount = random.randint(5,10)
+        session['counter'] += addAmount
     elif building == 'house':
-        session['counter'] += random.randint(2,5)
+        addAmount = random.randint(2,5)
+        session['counter'] += addAmount
     elif building == 'casino':
-        session['counter'] += random.randint(-50,50)
-    
+        addAmount = random.randint(-50,50)
+        session['counter'] += addAmount
+
 
     return redirect('/')
 
