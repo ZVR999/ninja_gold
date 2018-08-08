@@ -52,7 +52,7 @@
     </div>
     <!-- Start of Activities -->
     <h4>Activities:</h4>
-    <div class="activity">Placeholder</div>
+    <div class="activity">{{ session['activity']| safe }}</div>
     <form action="/reset" method="POST">
         <input type="submit" value="Reset Game">
     </form>
