@@ -16,6 +16,12 @@ def process_money():
     print request.form['building'] 
     if building == 'farm':
         session['counter'] += random.randint(10,20)
+    elif building == 'cave':
+        session['counter'] += random.randint(5,10)
+    elif building == 'house':
+        session['counter'] += random.randint(2,5)
+    elif building == 'casino':
+        session['counter'] += random.randint(-50,50)
     
 
     return redirect('/')
