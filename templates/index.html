@@ -11,12 +11,12 @@
 
 <body>
     <h3>Your Gold:</h3>
-    <div class="counter">(Gold Counter)</div>
+    <div class="counter">{{session['counter']}}</div>
     <div>
         <div class="building">
             <h2>Farm</h2>
             <p>(earns 10-20 golds)</p>
-            <form action="">
+            <form action="/process_money" method="post">
                 <input type="hidden" name="building" value="farm">
                 <input type="submit" value="Find Gold!">
             </form>
@@ -24,7 +24,7 @@
         <div class="building">
             <h2>Cave</h2>
             <p>(earns 5-10 golds)</p>
-            <form action="">
+            <form action="/process_money" method="post">
                 <input type="hidden" name="building" value="cave">
                 <input type="submit" value="Find Gold!">
             </form>
@@ -32,7 +32,7 @@
         <div class="building">
             <h2>House</h2>
             <p>(earns 2-5 golds)</p>
-            <form action="">
+            <form action="/process_money" method="post">
                 <input type="hidden" name="building" value="house">
                 <input type="submit" value="Find Gold!">
             </form>
@@ -40,7 +40,7 @@
         <div class="building">
             <h2>Casino</h2>
             <p>(earns 0-50 golds)</p>
-            <form action="">
+            <form action="/process_money" method="post">
                 <input type="hidden" name="building" value="casino">
                 <input type="submit" value="Find Gold!">
             </form>

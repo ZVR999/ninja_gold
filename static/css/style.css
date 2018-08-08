@@ -11,6 +11,7 @@ h3, .counter{
     display: inline-block;
     width: 20%;
     margin-bottom: 10px;
+    padding: 2px;
 }
 
 .counter, .building, .activity{
