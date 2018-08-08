@@ -48,3 +48,13 @@ input{
     overflow-y: scroll;
 }
 /* End styling for activites current data box */
+
+/* Bad Event */
+.red{
+    color: red;
+}
+
+/* Good Event */
+.green{
+    color: green;
+}

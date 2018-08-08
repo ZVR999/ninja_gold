@@ -41,14 +41,13 @@ def process_money():
     addedAmount = str(addAmount)
     gold = ' golds from the '
     dateEntered = datetime.datetime.now()
-    current = '('+str(dateEntered.strftime('%x'))+' '+str(dateEntered.strftime('%I')
-                                                      )+':'+str(dateEntered.strftime('%M'))+')</div>'
+    current = '('+str(dateEntered.strftime('%Y/%m/%d %I:%M %p'))+')</div>'
     if building == 'casino':
         if addAmount >= 0:
-            earned = '<div>Entered a casino and won '
+            earned = '<div class="green">Entered a casino and won '
             where += 'Nice! '
         elif addAmount < 0:
-            earned = '<div>Entered a casino and lost '
+            earned = '<div class="red">Entered a casino and lost '
             where += '...Ouch.. '
     session['activity'] += "{}{}{}{}{}".format(
         earned, addedAmount, gold, where, current)
